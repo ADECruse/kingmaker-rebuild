@@ -67,21 +67,29 @@ table {
 .split {
     display: flex;
     flex-direction: row;
-    min-height: 200px;
-    /* background-color: #0095f3; */
+    flex-wrap: nowrap;
+    min-height: 600px;
     
 }
 
 .content {
-    box-sizing: border-box;
-    width: 100%;
-    background-image: 'images/banner.jpg';
+    /* max-width: 50%; */
+    /* box-sizing: border-box; */
+    /* width: 100%; */
+    background-image: url(images/banner.jpg);
+    background-size: cover;
 }
 
 .media {
-    box-sizing: border-box;
-    width: 100%;
+    max-width: 50%;
+    /* box-sizing: border-box; */
+    background-image: url(images/cat1.jpg);
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    /* width: 100%; */
 }
+
 
 @keyframes BannerGradient { 
     0%{background-position:91% 0%}
