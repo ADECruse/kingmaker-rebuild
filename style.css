@@ -55,6 +55,10 @@ table {
     box-sizing: border-box;
   }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2 {
     font-size: 2.25rem;
     margin: 1rem;
@@ -71,6 +75,10 @@ p {
 	overflow-x: hidden;
 }
 
+.fadein {
+    opacity:0;
+}
+
 /* banner */
 
 .banner {
@@ -83,8 +91,13 @@ p {
 	text-align: center;
 	overflow-x: hidden;
 }
+.fadeonload {
+	opacity:0;
+	margin-left:-300px;	
+}
 
 #logo {
+    
     padding: 30px;
     
 }
