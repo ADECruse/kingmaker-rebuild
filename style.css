@@ -51,6 +51,14 @@ table {
 
 /* main */
 
+h2 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 100%;
+}
+
 #wrapper {
     box-sizing: border-box;
     width: 100%;
@@ -60,10 +68,24 @@ table {
 /* banner */
 
 .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     position: relative;
 	text-align: center;
 	overflow-x: hidden;
+}
+
+#logo {
+    padding: 30px;
+    
+}
+
+#logo img {
+    width: 100%;
+    
 }
 
 @keyframes BannerGradient { 
@@ -74,7 +96,6 @@ table {
 
 #backgrad {
     width: 100%;
-    min-height: inherit;
     background: linear-gradient(227deg, #00ffbd, #00fffb, #0095f3, #888cff, #844aff, #ff2af8);
     background-size: 1200% 1200%;
     animation: BannerGradient 13s ease infinite;
@@ -86,26 +107,35 @@ table {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    min-height: 600px;
-    
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .content {
-    /* max-width: 50%; */
-    /* box-sizing: border-box; */
-    /* width: 100%; */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-image: url(images/banner.jpg);
     background-size: cover;
 }
 
 .media {
     max-width: 50%;
-    /* box-sizing: border-box; */
-    background-image: url(images/cat1.jpg);
-    background-size: cover;
-    background-clip: border-box;
-    background-origin: border-box;
+    flex-grow: 1;
+    
+}
+
+.media img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    height: auto; 
 }
 
 
