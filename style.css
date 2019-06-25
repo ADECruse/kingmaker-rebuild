@@ -57,12 +57,30 @@ table {
 	overflow-x: hidden;
 }
 
+/* banner */
+
 .banner {
     min-height: 100vh;
     position: relative;
 	text-align: center;
 	overflow-x: hidden;
 }
+
+@keyframes BannerGradient { 
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+
+#backgrad {
+    width: 100%;
+    min-height: inherit;
+    background: linear-gradient(227deg, #00ffbd, #00fffb, #0095f3, #888cff, #844aff, #ff2af8);
+    background-size: 1200% 1200%;
+    animation: BannerGradient 13s ease infinite;
+}
+
+/* content */
 
 .split {
     display: flex;
@@ -87,20 +105,7 @@ table {
     background-size: cover;
     background-clip: border-box;
     background-origin: border-box;
-    /* width: 100%; */
+    width: 100%;
 }
 
 
-@keyframes BannerGradient { 
-    0%{background-position:91% 0%}
-    50%{background-position:10% 100%}
-    100%{background-position:91% 0%}
-}
-
-#backgrad {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(227deg, #00ffbd, #00fffb, #0095f3, #888cff, #844aff, #ff2af8);
-    background-size: 1200% 1200%;
-    animation: BannerGradient 13s ease infinite;
-}
