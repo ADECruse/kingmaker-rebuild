@@ -1,7 +1,21 @@
 $(document).ready(function() {
 
+    
+
+      $(function(){
+        $(window).scroll(function(){
+            var scrollBottom = $(window).scrollTop() + $(window).height();
+            var aTop = $('.banner').height();
+            if($(this).scrollTop()>=aTop){
+                $("ul").fadeIn(500).show();
+            } else {
+                $("ul").fadeOut(300).hide();
+            }
+        });
+      });
+
     $('.fadeonload').each( function(i){
-        $(this).animate({'opacity':'1','margin-left':'0px'},500);
+        $(this).animate({'opacity':'1','margin-left':'0px'},900);
     }); 
 
     $(window).scroll( function(){
