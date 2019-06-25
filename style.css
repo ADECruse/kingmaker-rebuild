@@ -51,16 +51,22 @@ table {
 
 /* main */
 
+* {
+    box-sizing: border-box;
+  }
+
 h2 {
     font-size: 2.25rem;
+    margin: 1rem;
 }
 
 p {
-    font-size: 100%;
+    margin: 1rem;
 }
 
 #wrapper {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     width: 100%;
 	overflow-x: hidden;
 }
@@ -85,7 +91,6 @@ p {
 
 #logo img {
     width: 100%;
-    
 }
 
 @keyframes BannerGradient { 
@@ -94,7 +99,7 @@ p {
     100%{background-position:91% 0%}
 }
 
-#backgrad {
+.backgrad {
     width: 100%;
     background: linear-gradient(227deg, #00ffbd, #00fffb, #0095f3, #888cff, #844aff, #ff2af8);
     background-size: 1200% 1200%;
@@ -122,12 +127,12 @@ p {
     color: white;
     background-image: url(images/banner.jpg);
     background-size: cover;
+    background-origin: border-box;
 }
 
 .media {
     max-width: 50%;
     flex-grow: 1;
-    
 }
 
 .media img {
@@ -137,5 +142,76 @@ p {
     width: 100%;
     height: auto; 
 }
+
+footer {
+    height: 25vh;
+    
+}
+
+.icons {
+    text-align: center;
+    padding-top: 40px;
+} 
+
+/* media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .split {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .media {
+        max-width: 100%;
+        flex-grow: 1;      
+    }
+
+    .media img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto; 
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+    
+    .content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-image: url(images/banner.jpg);
+        background-size: cover;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (orientation: landscape) {
+    
+  }
 
 
