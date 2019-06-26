@@ -8,8 +8,10 @@ $(document).ready(function() {
             var aTop = $('.banner').height();
             if($(this).scrollTop()>=aTop){
                 $("ul").fadeIn(500).show();
+                // $(".banner").css({'position':'fixed','min-height':'30px'});
             } else {
-                $("ul").fadeOut(300).hide();
+                $("ul").fadeOut(300,$("ul").hide());
+                // $(".banner").css({'position':'relative','min-height':'100vh'});
             }
         });
       });

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 /* CSS reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -51,21 +52,203 @@ table {
 
 /* main */
 
-* {
+html {
     box-sizing: border-box;
-  }
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Type */
 
 html {
-    scroll-behavior: smooth;
+    font-size: 18pt;
+}
+
+    @media screen and (max-width: 1680px) {
+
+        html {
+            font-size: 14pt;
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        html {
+            font-size: 12pt;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        html {
+            font-size: 11pt;
+        }
+
+    }
+
+    @media screen and (max-width: 360px) {
+
+        html {
+            font-size: 10pt;
+        }
+
+    }
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body, input, select, textarea {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+strong, b {
+    font-weight: 400;
+}
+
+em, i {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 2rem 0;
+}
+
+    p.major {
+        font-size: 1.25rem;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1.375;
+    letter-spacing: -0.05em;
+    margin: 0 0 1rem 0;
+}
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
 }
 
 h2 {
     font-size: 2.25rem;
-    margin: 1rem;
 }
 
-p {
-    margin: 1rem;
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+sub {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+sup {
+    font-size: 0.8rem;
+    position: relative;
+    top: -0.5rem;
+}
+
+blockquote {
+    border-left: solid 4px;
+    font-style: italic;
+    margin: 0 0 2rem 0;
+    padding: 0.5rem 0 0.5rem 2rem;
+}
+
+code {
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    margin: 0 0.25rem;
+    padding: 0.25rem 0.325rem;
+}
+
+pre {
+    -webkit-overflow-scrolling: touch;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    margin: 0 0 2rem 0;
+}
+
+    pre code {
+        display: block;
+        line-height: 1.5;
+        padding: 0.75rem 1rem;
+        overflow-x: auto;
+    }
+
+hr {
+    border: 0;
+    border-bottom: solid 1px;
+    margin: 2.5rem 0;
+}
+
+    hr.major {
+        margin: 3.5rem 0;
+    }
+
+@media screen and (max-width: 736px) {
+
+    p.major {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
 }
 
 #wrapper {
@@ -90,6 +273,11 @@ p {
     position: relative;
 	text-align: center;
 	overflow-x: hidden;
+}
+
+.bannernav {
+    position: fixed;
+    min-height: 30px;
 }
 .fadeonload {
 	opacity: 0;
@@ -161,6 +349,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    background-color: #484649;
 }
 
 .reverse {
@@ -174,9 +363,7 @@ ul {
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: url(images/banner.jpg);
-    background-size: cover;
-    background-origin: border-box;
+    padding: 0 48px;
 }
 
 .media {
@@ -204,13 +391,35 @@ footer {
 
 /* media queries */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+
+    /* html {
+        font-size: 10pt;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    } */
 
     .split {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        min-height: 100vh;
+
     }
 
     .media {
@@ -236,31 +445,50 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         color: white;
-        background-image: url(images/banner.jpg);
-        background-size: cover;
     }
 } 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 481px and up) */
+@media only screen and (min-width: 481px) {
+    /* html {
+        font-size: 10pt;
+    } */
+} 
+
+/* Medium devices (landscape tablets, 737px and up) */
+@media only screen and (min-width: 737px) {
+    /* html {
+        font-size: 10pt;
+    } */
     
 } 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-    
+/* Large devices (laptops/desktops, 981px and up) */
+@media only screen and (min-width: 981px) {
+    /* html {
+        font-size: 12pt;
+    } */
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/* Extra large devices (large laptops and desktops, 1281px and up) */
+@media only screen and (min-width: 1281px) {
+    /* html {
+        font-size: 14pt;
+    } */
+}
 
 @media only screen and (orientation: landscape) {
     
   }
 
+  /* @include breakpoints((
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  )
+	)); */
 
