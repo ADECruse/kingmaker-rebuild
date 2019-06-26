@@ -1,21 +1,5 @@
 $(document).ready(function() {
 
-    
-
-      $(function(){
-        $(window).scroll(function(){
-            var scrollBottom = $(window).scrollTop() + $(window).height();
-            var aTop = $('.banner').height();
-            if($(this).scrollTop()>=aTop){
-                $("ul").fadeIn(500).show();
-                // $(".banner").css({'position':'fixed','min-height':'30px'});
-            } else {
-                $("ul").fadeOut(300,$("ul").hide());
-                // $(".banner").css({'position':'relative','min-height':'100vh'});
-            }
-        });
-      });
-
     $('.fadeonload').each( function(i){
         $(this).animate({'opacity':'1','margin-left':'0px'},900);
     }); 
@@ -32,8 +16,4 @@ $(document).ready(function() {
             
         }); 
     });
-});
-
-$(document).ready(function() {
-   
 });

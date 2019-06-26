@@ -275,10 +275,6 @@ hr {
 	overflow-x: hidden;
 }
 
-.bannernav {
-    position: fixed;
-    min-height: 30px;
-}
 .fadeonload {
 	opacity: 0;
 	margin-left:-300px;	
@@ -306,42 +302,6 @@ hr {
     background-size: 1200% 1200%;
     animation: BannerGradient 13s ease infinite;
 }
-
-/* nav */
-
-ul {
-    display: none;
-    z-index: 1;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: 0;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
-
 
 /* content */
 
