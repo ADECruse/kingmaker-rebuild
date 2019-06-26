@@ -344,6 +344,10 @@ footer {
     
 }
 
+footer p {
+    font-size: 50%;
+}
+
 .icons {
     text-align: center;
     padding-top: 40px;
