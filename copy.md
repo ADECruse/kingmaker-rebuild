@@ -1,3 +1,6 @@
+1 Colour 
+Kingmaker is all about colour and how it can serve you. Its depth, it's visual thickness, its energy sparks joy and we can't get enough of it.
+
 2 Story
 Our goal is to discover your story and how best to express it to the world. 
 We strongly believe that bringing the emotional appeal of your story into your branding is a crucial part of your unique identity. This is what gets people through the door.
@@ -18,3 +21,10 @@ Every public part of your company is an expression of your corporate identity. E
 Put simply, we are here to make you look like Fine Art.
 8 Capture
 We provide a comprehensive shooting service as part of our package, capturing your establishment and your people in the best possible light.
+
+10 Distilled
+Here at Kingmaker we distill the complexity of your business and goals into unique and engaging visual communication in whatever platform you desire.
+11 Comprehensive
+We provide comprehensive solutions that take care of every single detail. We have you covered so that you don't have to worry about anything.
+12 Experience
+Our team, with our reliable range of partners, are experienced in all aspects of visual communication. Renowned for our personability and service, our loyal clients return time and time again beccause they know we will take all the stress away and make design the exciting and enjoyable experience that realising your visions should be.
