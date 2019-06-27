@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
     $('.fadeonload').each( function(i){
-        $(this).animate({'opacity':'1','margin-left':'0px'},900);
+        $(this).animate({'opacity':'1',},900);
     }); 
+    $('.fadeonload')
 
     $(window).scroll( function(){
         $('.fadein').each( function(i){
@@ -17,3 +18,6 @@ $(document).ready(function() {
         }); 
     });
 });
+
+    
+   
