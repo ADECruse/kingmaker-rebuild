@@ -344,11 +344,18 @@ to {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     color: white;
     padding: 0 35px;
-
 }
+
+/* .content h2 {
+    text-align: left;
+}
+
+.content p {
+    text-align: left;
+} */
 
 .media {
     max-width: 50%;
