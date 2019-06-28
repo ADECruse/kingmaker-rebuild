@@ -1,15 +1,18 @@
 .cbp-af-header {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #f6f6f6;
 	z-index: 10000;
-	height: 230px;
+	height: 100vh;
 	overflow: hidden;
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	transition: height 0.3s;
+	-webkit-transition: height 1s;
+	-moz-transition: height 1s;
+	transition: height 1s;
 }
 
 .cbp-af-header .cbp-af-inner {
@@ -20,15 +23,17 @@
 }
 
 .cbp-af-header h1,
-.cbp-af-header nav {
+.cbp-af-header nav,
+.cbp-af-header img {
 	display: inline-block;
 	position: relative;
 }
 
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header h1,
-.cbp-af-header nav a {
-	line-height: 230px;
+.cbp-af-header nav a,
+.cbp-af-header img {
+	line-height: 100vh;
 }
 
 .cbp-af-header h1 {
@@ -38,6 +43,11 @@
 	font-size: 4em;
 	margin: 0;
 	float: left;
+}
+
+.cbp-af-header img {
+	width: 100%;
+	
 }
 
 .cbp-af-header nav {
@@ -57,23 +67,33 @@
 
 /* Transitions and class for reduced height */
 .cbp-af-header h1,
-.cbp-af-header nav a {
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+.cbp-af-header nav a,
+.cbp-af-header img {
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-	height: 90px;
+	height: 60px;
 }
 
 .cbp-af-header.cbp-af-header-shrink h1,
-.cbp-af-header.cbp-af-header-shrink nav a {
-	line-height: 90px;
+.cbp-af-header.cbp-af-header-shrink nav a,
+.cbp-af-header.cbp-af-header-shrink img
+ {
+	line-height: 60px;
 }
 
 .cbp-af-header.cbp-af-header-shrink h1 {
 	font-size: 2em;
+}
+
+.cbp-af-header.cbp-af-header-shrink img {
+	height: 60px;
+	width: auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 /* Example Media Queries */
