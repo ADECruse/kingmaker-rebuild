@@ -6,9 +6,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/component.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/6f7e0d269f.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
     </head>
     <body>
@@ -159,6 +159,18 @@
                 </div>
             </section>
             <!-- end of content -->
+
+            <section>
+                <form action="/action_page.php" method="post">
+                    <input name="firstname" type="text" placeholder="Your name..">
+                    <input name="lastname" type="text" placeholder="Your last name.."> 
+                    <input name="companyname" type="text" placeholder="Your company's name..">
+                    <input name="email"type="email" placeholder="Your name..">
+                    <textarea name="message" rows="10" cols="30" placeholder="Your message..">
+                    </textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
 
             <footer class="backgrad">
                 <div class="icons">
