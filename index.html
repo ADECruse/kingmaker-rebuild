@@ -5,22 +5,26 @@
         <title>kingmaker webdesign</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/component.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/6f7e0d269f.js"></script>
+		<script src="js/modernizr.custom.js"></script>
     </head>
     <body>
         <div id="wrapper">
 
             <!-- banner -->
-            <section class="banner backgrad">                
-                <div id="logo" class="fadeinonload">
+            <section class="backgrad cbp-af-header">                
+                <div class="fadeinonload cbp-af-inner">
+                    <!-- <h1>Kingmaker</h1> -->
                     <img src="images/kingmaker-logo.png" alt="kingmaker-logo">
                 </div>                                       
             </section>
 
             <!-- start of content -->
-            <!-- one -->           
+            <!-- one --> 
+            <section class="split blanky"></section>          
             <section class="split">
                 <div class="content">
                     <h1>Colour</h1>
@@ -156,14 +160,69 @@
             </section>
             <!-- end of content -->
 
-            <footer class="backgrad">
-                <div class="icons">
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-instagram"></i>
-                    <p>© 2019 Kingmaker</p>
-                </div>
-                    
-            </footer>
+            <!-- Form -->
+        <section class="split">
+            <div class="content">
+                    <h1>Contact us</h1>
+            </div>
+            <div class="media">
+                
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="name" value="" />
+                        </div>
+                        <div class="field half">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" value="" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" value="" />
+                        </div>
+                        <div class="field half">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" value="" />
+                        </div>
+                        <!-- <div class="field third">
+                            <input type="radio" id="preferred-contact" name="preferred-contact" checked />
+                            <label for="preferred-contact">Low Priority</label>
+                        </div>
+                        <div class="field third">
+                            <input type="radio" id="priority-normal" name="priority" />
+                            <label for="priority-normal">Normal Priority</label>
+                        </div> -->
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6"></textarea>
+                        </div>
+                        <!-- <div class="field half">
+                            <input type="checkbox" id="copy" name="copy" />
+                            <label for="copy">Email me a copy of this message</label>
+                        </div>
+                        <div class="field half">
+                            <input type="checkbox" id="human" name="human" checked />
+                            <label for="human">I am a human and not a robot</label>
+                        </div> -->
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+                
+
+            </div>
+        </section>
+
+        <footer class="backgrad">
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-instagram"></i>
+                <p>© 2019 Kingmaker</p>
+            </div>
+                
+        </footer>
         </div>
 
 
@@ -171,6 +230,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="script.js" async defer></script>
+        <script src="js/script.js" async defer></script>
+        <script src="js/classie.js" async defer></script>
+        <script src="js/cbpAnimatedHeader.js" async defer></script>
     </body>
 </html>
