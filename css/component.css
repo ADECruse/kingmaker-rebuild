@@ -10,9 +10,9 @@
 	z-index: 10000;
 	height: 100vh;
 	overflow: hidden;
-	-webkit-transition: height 1s;
-	-moz-transition: height 1s;
-	transition: height 1s;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
 }
 
 .cbp-af-header .cbp-af-inner {
@@ -69,9 +69,9 @@
 .cbp-af-header h1,
 .cbp-af-header nav a,
 .cbp-af-header img {
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .cbp-af-header.cbp-af-header-shrink {
@@ -83,6 +83,7 @@
 .cbp-af-header.cbp-af-header-shrink img
  {
 	line-height: 60px;
+	text-align: center;
 }
 
 .cbp-af-header.cbp-af-header-shrink h1 {

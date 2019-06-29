@@ -329,9 +329,13 @@ to {
     flex-wrap: nowrap;
     /* background-color: #484649; */
     background-attachment: fixed;
-    background-image: url(images/banner.jpg);
+    background-image: url(/images/banner.jpg);
     background-size: cover;
     background-origin: border-box;
+}
+
+.blanky {
+    height: 100vh;
 }
 
 .reverse {
