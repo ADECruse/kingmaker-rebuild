@@ -256,9 +256,6 @@ hr {
     flex-direction: column;
     width: 100%;
     overflow-x: hidden;
-    /* background-image: url(images/banner.jpg);
-    background-size: cover;
-    background-origin: border-box; */
 }
 
 .fadein {
