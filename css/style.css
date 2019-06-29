@@ -348,7 +348,7 @@ to {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     color: white;
     padding: 0 35px;
 }
@@ -520,7 +520,7 @@ button,
 
 form {
     margin: 0 0 2rem 0;
-    padding: 0 35px;
+    padding: 35px;
 }
 
     form > :last-child {
@@ -899,8 +899,7 @@ footer p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-
+        align-items: left;
         color: white;
     }
 } 
