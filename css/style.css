@@ -331,6 +331,17 @@ to {
     background-origin: border-box;
 }
 
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-origin: border-box;
+}
+
 .blanky {
     height: 100vh;
 }
